@@ -12,37 +12,91 @@
       background: #ffffff;
       color: #333;
     }
+
     nav {
-      background:#0d1117;
+      background: #0d1117;
       padding: 12px 20px;
       text-align: center;
     }
+
     nav a {
       margin: 0 15px;
       color: white;
       text-decoration: none;
     }
+
+    header {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      color: #0d1117;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 8px 0;
+    }
+
     main {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
     }
-    h1, h2 {
-      text-align: center;
+
+    h2 {
       color: #0d1117;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
+      margin-top: 50px;
     }
+
     p {
       font-size: 1.1rem;
       line-height: 1.7;
     }
+
     .section {
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
+
+    .contact-info p, .education-entry {
+      margin: 5px 0;
+    }
+
+    .education-entry strong {
+      display: block;
+      margin-top: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
     footer {
       text-align: center;
-      margin-top: 60px;
+      font-size: 0.9rem;
       padding: 20px;
-      background: #eaeaea;
+      background: #f0f0f0;
+      color: #666;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -55,11 +109,19 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <main>
-    <h1>About</h1>
+  <!-- Header Section -->
+  <header>
+    <h1>Binoy Dey</h1>
+    <p>Ph.D. Research Scholar, IIT Bhubaneswar</p>
+    <p><a href="mailto:deybinoy7711@gmail.com">deybinoy7711@gmail.com</a></p>
+  </header>
 
-    <div class="section">
-      <h2>Binoy Dey</h2>
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Biography -->
+    <section class="section">
+      <h2>Biography</h2>
       <p>
         Binoy Dey is a doctoral scholar in the School of Basic Sciences at the Indian Institute of Technology Bhubaneswar. His research interests include quantum dynamics, cavity quantum electrodynamics, and computational materials chemistry. He is currently involved in simulating light–matter interactions in molecular systems using quantum chemical and wavepacket dynamics approaches.
       </p>
@@ -72,11 +134,64 @@
       <p>
         Binoy has a keen interest in code development and scientific computing. He is proficient in Python, Fortran, and Linux environments, and actively engages in developing custom scientific codes for molecular simulations. His broader academic pursuits also include attending interdisciplinary seminars, participating in research workshops, and staying updated with emerging literature in theoretical and computational chemistry.
       </p>
-    </div>
+    </section>
+
+    <!-- Contact Addresses -->
+    <section class="section">
+      <h2>Contact Addresses</h2>
+      <div class="contact-info">
+        <strong>Current Address (Institute)</strong>
+        <p>A-723, Brahmaputra Hall of Residence</p>
+        <p>Indian Institute of Technology Bhubaneswar</p>
+        <p>Argul, Khordha, PIN - 752050, Odisha, India</p>
+
+        <strong>Permanent Address (Home)</strong>
+        <p>20, Sahaganj Mirerhat Main Road, P.O: Sahaganj</p>
+        <p>PIN - 712104, Dist: Hooghly, West Bengal, India</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <h2>Education</h2>
+      <div class="education-entry">
+        <strong>Ph.D. in Chemistry (2024 – Present)</strong>
+        <p>IIT Bhubaneswar, School of Basic Sciences</p>
+
+        <strong>M.Sc. in Chemistry (2022 – 2024)</strong>
+        <p>IIT Bhubaneswar, CGPA: 8.24/10</p>
+        <p><em>Thesis:</em> Computational Approach to Optoelectronic Enhancements in Cs₂AgBiI₆ Perovskite</p>
+        <p><em>Advisor:</em> Dr. Kousik Samanta</p>
+
+        <strong>B.Sc. (Hons.) in Chemistry (2019 – 2022)</strong>
+        <p>Chandernagore College, Burdwan University, CGPA: 8.72/10</p>
+
+        <strong>Higher Secondary (2019)</strong>
+        <p>Hooghly Branch Govt. High School, 87%</p>
+
+        <strong>Secondary Examination (2017)</strong>
+        <p>Bandel St. John’s High School, 85.43%</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <h2>Skills & Interests</h2>
+      <ul>
+        <li>🌐 Languages: Bengali, English, Hindi</li>
+        <li>💡 Strong problem-solving, communication, and teamwork abilities</li>
+        <li>📚 Passion for interdisciplinary seminars, workshops, and continuous learning</li>
+        <li>💻 Coding: Proficient in Python, Fortran, and Linux (Scientific Code Development)</li>
+        <li>🔬 Research Interests: Quantum dynamics, cavity QED, machine learning for materials, optoelectronic properties</li>
+      </ul>
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Binoy Dey
+    &copy; 2025 Binoy Dey. All rights reserved.
   </footer>
+
 </body>
 </html>
