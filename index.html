@@ -4,16 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Questing Mind</title>
+  <meta name="description" content="The Questing Mind – a creative space for ideas, learning, and curiosity.">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: #f4f4f4;
       color: #333;
+      background-image: url('background-pattern.png'); /* optional pattern */
+      background-repeat: repeat;
     }
 
     nav {
@@ -54,6 +63,22 @@
       animation: fadeIn 2s ease-in-out;
     }
 
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 28px;
+      background: #58a6ff;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #1f6feb;
+    }
+
     footer {
       margin-top: 80px;
       padding: 20px;
@@ -68,7 +93,6 @@
       100% { opacity: 1; transform: translateY(0); }
     }
 
-    /* Responsive */
     @media (max-width: 600px) {
       h1 {
         font-size: 2.2rem;
@@ -96,6 +120,7 @@
   <header>
     <h1>Welcome to Questing Mind</h1>
     <p>I am trying to build something amazing. Stay curious and stay tuned!</p>
+    <a href="about.html" class="cta-button">Learn More</a>
   </header>
 
   <!-- Footer -->
