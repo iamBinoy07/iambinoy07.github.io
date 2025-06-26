@@ -30,7 +30,8 @@
       padding: 16px 20px;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 20px;
     }
 
     nav a {
@@ -47,7 +48,7 @@
     header {
       background: linear-gradient(to right, #0d1117, #1f2937);
       color: white;
-      padding: 120px 20px 60px;
+      padding: 100px 20px 60px;
       text-align: center;
     }
 
@@ -61,6 +62,25 @@
       font-size: 1.3rem;
       opacity: 0.9;
       animation: fadeIn 2s ease-in-out;
+    }
+
+    .author-photo {
+      margin-top: 30px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #58a6ff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .author-name {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #ccc;
+      opacity: 0.85;
     }
 
     .cta-button {
@@ -113,13 +133,18 @@
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
+    <a href="about.html">Research</a>
     <a href="contact.html">Contact</a>
+    <a href="contact.html">Publications</a>
+    <a href="contact.html">Blogs</a>
   </nav>
 
   <!-- Header -->
   <header>
     <h1>Welcome to Questing Mind</h1>
-    <p>I am trying to build something amazing. Stay curious and stay tuned!</p>
+    <p>I'm on a journey to create, learn, and share something meaningful. Join me in this quest of the mind.</p>
+    <img src="binoy.jpg" alt="Binoy Dey" class="author-photo">
+    <div class="author-name">Binoy Dey – Author & Creator</div>
     <a href="about.html" class="cta-button">Learn More</a>
   </header>
 
